@@ -1,34 +1,30 @@
-    Price Range Slider Logic Diagram
-          
-          
-                PAGE LOAD
-                   │
-                   ▼
-        Get references to elements
-        (inputs, sliders, progress bar)
-                   │
-                   ▼
-            Set priceGap = 500
-                   │
-        ┌──────────┴──────────┐
-        │                     │
-        ▼                     ▼
- USER TYPES VALUE        USER DRAGS SLIDER
- (number inputs)          (range inputs)
-        │                     │
-        ▼                     ▼
- Read min & max          Read minVal & maxVal
-        │                     │
-        ▼                     ▼
- Validate values         Check priceGap rule
-        │                     │
-        ▼                     ▼
- Fix invalid values      Adjust slider if needed
-        │                     │
-        ▼                     ▼
- Update slider UI        Update number inputs
- (left/right %)          (min + max fields)
-        │                     │
-        └──────────┬──────────┘
-                   ▼
-            Update green range
+# Price Range Slider
+
+A simple price range slider built using **HTML, CSS, and JavaScript**.  
+Users can select minimum and maximum prices using both number inputs and draggable sliders.
+
+## Features
+- Dual range slider (min & max)
+- Manual price input fields
+- Minimum price gap validation
+- Dynamic slider progress bar
+- Responsive layout
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
+
+## How to Run
+1. Clone the repository
+2. Open `index.html` in your browser
+
+## Demo Use Case
+Useful for:
+- E-commerce price filters
+- Budget selection UI
+- Product search filters
+
+---
+
+Made for learning DOM manipulation and UI synchronization.
